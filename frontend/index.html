@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+        <meta charset="utf-8">
+    </head>
+        
+    <body>
+        <h1 class="test">My Drive Clone</h1>
+        <form>
+            <label for="file">Select a file to be uploaded:</label><br><br>
+            <input type="file" id="file" name="chosenFile" value="" ><br>
+            <input type="button" value="Submit" id="submit">
+        </form>
+        <script src="main.js"></script>
+        <div id="output">
+            <table class="file_table">
+                <tr id="table_header">
+                    
+                    <th>Filename</th>
+                    <th>uploaded</th>
+                    <th>size</th>
+                    <th>Delete</th>
+                    <th>Download</th>
+                    <th>Rename </th>
+                    
+                </tr>
+    
+            </table>
+        </div>
+    </body>
+</html>

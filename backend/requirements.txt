@@ -1,0 +1,8 @@
+Flask
+Flask-Cors
+SQLAlchemy
+Werkzeug
+Flask-SQLAlchemy
+PyMySQL
+mysql-connector
+mysqlclient

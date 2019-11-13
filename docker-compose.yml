@@ -1,0 +1,27 @@
+version: '3'
+services:
+  backend:
+    build: './backend'
+    ports:
+      - "4000:80"
+    volumes:
+      - /Users/reneenjilian/Documents/file_uploader/backend:/app
+
+    depends_on:
+      - db
+
+  frontend:
+    build: './frontend'
+    ports:
+      - "5000:80"
+    volumes:
+      - /Users/reneenjilian/Documents/file_uploader/frontend:/usr/share/nginx/html
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "3307:3306" 
