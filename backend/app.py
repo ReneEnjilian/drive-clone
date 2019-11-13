@@ -9,7 +9,7 @@ UPLOAD_FOLDER = '/app/saved_files'
 app = Flask(__name__)
 CORS(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqldb://root:example@file_uploader_db_1/mydb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqldb://root:example@drive-clone_db_1/mydb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
